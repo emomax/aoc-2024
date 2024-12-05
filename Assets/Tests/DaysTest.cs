@@ -94,5 +94,61 @@ namespace Tests
 
             Assert.AreEqual(48, d.SolveB(lines));
         }
+        
+        [Test]
+        public void Day4a()
+        {
+            string path = "Assets/Tests/TestData/Day4.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day4();
+
+            Assert.AreEqual(18, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day4aMatrixInversion()
+        {
+            var d = new Day4();
+            var lines = new List<string>()
+            {
+                "XMASM",
+                "MASMS",
+                "AMASA",
+                "SMASM",
+                "XMASX",
+            };
+
+            Assert.AreEqual(4, d.SolveA(lines.ToArray()));
+        }
+
+        [Test]
+        public void Day4b()
+        {
+            string path = "Assets/Tests/TestData/Day4.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day4();
+
+            Assert.AreEqual(9, d.SolveB(lines));
+        }
+        
+        [Test]
+        public void Day5a()
+        {
+            string path = "Assets/Tests/TestData/Day5.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day5();
+
+            Assert.AreEqual(143, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day5b()
+        {
+            string path = "Assets/Tests/TestData/Day5.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day5();
+
+            Assert.AreEqual(123, d.SolveB(lines));
+        }
     }
 }

@@ -16,12 +16,8 @@ namespace Solvers
             {
                 MatchCollection matches = rg.Matches(line);
 
-
                 foreach (Match match in matches)
                 {
-                    var matchVal = match.Groups[0].Value;
-                    Debug.Log(matchVal);
-
                     if (!Int64.TryParse(match.Groups[1].Value, out long a))
                         throw new Exception($"Couldn't parse '{match.Groups[1]}' to int!");
                     if (!Int64.TryParse(match.Groups[2].Value, out long b))
