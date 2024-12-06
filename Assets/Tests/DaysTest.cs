@@ -150,5 +150,25 @@ namespace Tests
 
             Assert.AreEqual(123, d.SolveB(lines));
         }
+        
+        [Test]
+        public void Day6a()
+        {
+            string path = "Assets/Tests/TestData/Day6.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day6();
+
+            Assert.AreEqual(41, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day6b()
+        {
+            string path = "Assets/Tests/TestData/Day6.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day6();
+
+            Assert.AreEqual(6, d.SolveB(lines));
+        }
     }
 }
