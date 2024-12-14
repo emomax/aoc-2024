@@ -5,7 +5,7 @@ namespace Solvers
 {
     public class Day6 : Day
     {
-        public int SolveA(string[] lines)
+        public long SolveA(string[] lines)
         {
             var map = new List<List<int>>();
             const byte open = 0;
@@ -86,7 +86,7 @@ namespace Solvers
         const byte open = 0;
         const byte busy = 1;
 
-        public int SolveB(string[] lines)
+        public long SolveB(string[] lines)
         {
             var map = new List<List<int>>();
 

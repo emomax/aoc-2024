@@ -6,7 +6,7 @@ namespace Solvers
 {
     public class Day3 : Day
     {
-        public int SolveA(string[] lines)
+        public long SolveA(string[] lines)
         {
             string pattern = @"mul\((-?\d{1,3}),(-?\d{1,3})\)";
             var rg = new Regex(pattern);
@@ -30,7 +30,7 @@ namespace Solvers
             return (int) sum;
         }
 
-        public int SolveB(string[] lines)
+        public long SolveB(string[] lines)
         {
             string pattern = @"mul\((\d{1,3}),(\d{1,3})\)|do\(\)|don\'t\(\)";
             var rg = new Regex(pattern);

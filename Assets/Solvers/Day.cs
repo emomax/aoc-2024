@@ -2,8 +2,8 @@
 {
     public interface Day
     {
-        int SolveA(string[] lines);
-        int SolveB(string[] lines);
+        long SolveA(string[] lines);
+        long SolveB(string[] lines);
         int GetDay();
     }
 }

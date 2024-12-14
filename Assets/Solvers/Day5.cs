@@ -5,7 +5,7 @@ namespace Solvers
 {
     public class Day5 : Day
     {
-        public int SolveA(string[] lines)
+        public long SolveA(string[] lines)
         {
             // Read rules
             var isAfterRules = new Dictionary<string, HashSet<string>>();
@@ -98,7 +98,7 @@ namespace Solvers
             return num;
         }
 
-        public int SolveB(string[] lines)
+        public long SolveB(string[] lines)
         {
             var isAfterRules = new Dictionary<string, HashSet<string>>();
             var isBeforeRules = new Dictionary<string, HashSet<string>>();

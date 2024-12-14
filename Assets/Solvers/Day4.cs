@@ -5,7 +5,7 @@ namespace Solvers
 {
     public class Day4 : Day
     {
-        public int SolveA(string[] lines)
+        public long SolveA(string[] lines)
         {
             var verticalLines = new List<List<char>>(lines[0].Length);
             var horizontalN = new Dictionary<int, List<char>>();
@@ -93,7 +93,7 @@ namespace Solvers
             return matches.Count;
         }
 
-        public int SolveB(string[] lines)
+        public long SolveB(string[] lines)
         {
             var charMatrix = new List<List<char>>();
             var w = lines[0].Length;

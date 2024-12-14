@@ -5,7 +5,7 @@ namespace Solvers
 {
     public class Day2 : Day
     {
-        public int SolveA(string[] lines)
+        public long SolveA(string[] lines)
         {
             var safeLevels = 0;
 
@@ -69,7 +69,7 @@ namespace Solvers
             return true;
         }
 
-        public int SolveB(string[] lines)
+        public long SolveB(string[] lines)
         {
             var safeLevels = 0;
 

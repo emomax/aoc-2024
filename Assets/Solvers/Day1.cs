@@ -6,7 +6,7 @@ namespace Solvers
 {
     public class Day1 : Day
     {
-        public int SolveA(string[] lines)
+        public long SolveA(string[] lines)
         {
             var left = new int[lines.Length];
             var right = new int[lines.Length];
@@ -40,7 +40,7 @@ namespace Solvers
             return diff;
         }
 
-        public int SolveB(string[] lines)
+        public long SolveB(string[] lines)
         {
             var left = new int[lines.Length];
             var right = new Dictionary<int, int>();
