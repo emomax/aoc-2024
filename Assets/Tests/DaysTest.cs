@@ -202,7 +202,7 @@ namespace Tests
 
             Assert.AreEqual(11387, d.SolveB(lines));
         }
-        
+
         [Test]
         public void Day8a()
         {
@@ -222,7 +222,7 @@ namespace Tests
 
             Assert.AreEqual(34, d.SolveB(lines));
         }
-        
+
         [Test]
         public void Day9a()
         {
@@ -242,14 +242,14 @@ namespace Tests
 
             Assert.AreEqual(2858, d.SolveB(lines));
         }
-        
+
         [Test]
         public void Day9bEdgeCase1()
         {
             var d = new Day9();
             Assert.AreEqual(132, d.SolveB(new string[] {"12345"}));
         }
-        
+
         [Test]
         public void Day10a()
         {
@@ -269,7 +269,7 @@ namespace Tests
 
             Assert.AreEqual(81, d.SolveB(lines));
         }
-        
+
         [Test]
         public void Day11a()
         {
@@ -286,10 +286,10 @@ namespace Tests
             string path = "Assets/Tests/TestData/Day11.txt";
             var lines = FileUtils.ReadFile(path);
             var d = new Day11();
-        
+
             Assert.AreEqual(65601038650482, d.SolveB(lines));
         }
-        
+
         [Test]
         public void Day12a()
         {
@@ -306,10 +306,10 @@ namespace Tests
             string path = "Assets/Tests/TestData/Day12.txt";
             var lines = FileUtils.ReadFile(path);
             var d = new Day12();
-        
+
             Assert.AreEqual(1206, d.SolveB(lines));
         }
-        
+
         [Test]
         public void Day13a()
         {
@@ -326,10 +326,10 @@ namespace Tests
             string path = "Assets/Tests/TestData/Day13.txt";
             var lines = FileUtils.ReadFile(path);
             var d = new Day13();
-        
+
             Assert.AreEqual(875318608908, d.SolveB(lines));
         }
-        
+
         [Test]
         public void Day14a()
         {
@@ -338,6 +338,146 @@ namespace Tests
             var d = new Day14(11, 7);
 
             Assert.AreEqual(12, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day15a1()
+        {
+            string path = "Assets/Tests/TestData/Day15-1.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day15();
+
+            Assert.AreEqual(2028, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day15a2()
+        {
+            string path = "Assets/Tests/TestData/Day15-2.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day15();
+
+            Assert.AreEqual(10092, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day15b()
+        {
+            string path = "Assets/Tests/TestData/Day15-2.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day15();
+
+            Assert.AreEqual(9021, d.SolveB(lines));
+        }
+
+        [Test]
+        public void Day15b2()
+        {
+            string path = "Assets/Tests/TestData/Day15-3.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day15();
+
+            Assert.AreEqual(9021, d.SolveB(lines));
+        }
+
+        [Test]
+        public void Day16a1a()
+        {
+            string path = "Assets/Tests/TestData/Day16.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day16();
+
+            Assert.AreEqual(7036, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day16a1b()
+        {
+            string path = "Assets/Tests/TestData/Day16.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day16(true);
+
+            Assert.AreEqual(7036, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day16a1c()
+        {
+            string path = "Assets/Tests/TestData/Day16.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day16(false, true);
+
+            Assert.AreEqual(7036, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day16a1d()
+        {
+            string path = "Assets/Tests/TestData/Day16.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day16(true, true);
+
+            Assert.AreEqual(7036, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day16a2a()
+        {
+            string path = "Assets/Tests/TestData/Day16-2.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day16();
+
+            Assert.AreEqual(11048, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day16a2b()
+        {
+            string path = "Assets/Tests/TestData/Day16-2.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day16(true);
+
+            Assert.AreEqual(11048, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day16a2c()
+        {
+            string path = "Assets/Tests/TestData/Day16-2.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day16(false, true);
+
+            Assert.AreEqual(11048, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day16a2d()
+        {
+            string path = "Assets/Tests/TestData/Day16-2.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day16(true, true);
+
+            Assert.AreEqual(11048, d.SolveA(lines));
+        }
+
+        [Test]
+        public void Day16b()
+        {
+            string path = "Assets/Tests/TestData/Day16.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day16();
+
+            Assert.AreEqual(45, d.SolveB(lines));
+        }
+
+        [Test]
+        public void Day16b2()
+        {
+            string path = "Assets/Tests/TestData/Day16-2.txt";
+            var lines = FileUtils.ReadFile(path);
+            var d = new Day16();
+
+            Assert.AreEqual(64, d.SolveB(lines));
         }
     }
 }
